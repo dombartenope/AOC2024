@@ -1,0 +1,17 @@
+package main 
+
+func day#_#(input string) {
+	lines := strings.Split(strings.TrimSpace(input), "\n")
+	fmt.Println(lines[0])
+	var output int
+	fmt.Println("Solution One:", output)
+}
+
+func day#_#(input string) {
+	lines := strings.Split(strings.TrimSpace(input), "\n")
+	fmt.Println(lines[1])
+	var output int
+	fmt.Println("Solution Two:", output)
+
+}
+
