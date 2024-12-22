@@ -108,9 +108,6 @@ func day4_2(input string) {
 	// 3) Output variable
 	output := 0
 
-	// Let's say we want a pattern around 'A':
-	// corners = M (up-left), S (up-right), M (down-left), S (down-right).
-	// You can adjust as needed.
 	for r := 1; r < rows-1; r++ {
 		for c := 1; c < cols-1; c++ {
 			if grid[r][c] == 'A' {
@@ -119,6 +116,7 @@ func day4_2(input string) {
 				dL := string(grid[r+1][c-1]) // down-left
 				dR := string(grid[r+1][c+1]) // down-right
 
+				//Around the horn clockwise will allow the checker to pick up any possible match that results in an 'X' shaped "MAS"
 				cornerCheck := strings.Join([]string{uL, uR, dR, dL}, "")
 
 				if cornerCheck != "MMSS" && cornerCheck != "MSSM" && cornerCheck != "SSMM" && cornerCheck != "SMMS" {
