@@ -1,0 +1,40 @@
+Sleigh Launch Safety Manual
+
+Specific order
+
+X|Y means that if both pages are to be produced as part of an update, the page # x must be printed before page # y
+
+Page Ordering rules : 
+* One per line
+* e.g. line 1 means that 47 must appear before 53
+47|53
+97|13
+97|61
+97|47
+75|29
+61|13
+75|53
+29|13
+97|29
+53|29
+61|53
+97|53
+61|29
+47|13
+75|47
+97|75
+47|61
+75|61
+47|29
+75|13
+53|13
+
+Page Numbers:
+* Need to be ordered according to the rules above
+* 
+75,47,61,53,29
+97,61,53,29,13
+75,29,13
+75,97,47,61,53
+61,13,29
+97,13,75,29,47
